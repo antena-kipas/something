@@ -8,7 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <link href="{{ asset('img/favicon.ico') }}" rel="icon">
+    {{-- Menggunakan path yang benar: public/assets/img/favicon.ico --}}
+    <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +18,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    {{-- Menggunakan path yang benar: public/assets/lib/... --}}
+    <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    {{-- Menggunakan path yang benar: public/assets/css/... --}}
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    {{-- Menggunakan path yang benar: public/assets/css/... --}}
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -68,19 +72,19 @@
                   >Fasilitas Sekolah</a
                 >
                 <a href="team.html" class="dropdown-item active">Guru</a>
-
                 <a href="404.html" class="dropdown-item">404 Error</a>
               </div>
             </div>
              {{-- CATATAN: Ganti href="..." dengan route() atau url() Laravel --}}
             <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
           </div>
-           {{-- CATATAN: Ganti href="" jika ini adalah link ke halaman portal --}}
+           {{-- CATATAN: Ganti href="" jika ini adalah link ke halaman portal, gunakan route() atau url() --}}
           <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
             >PORTAL<i class="fa fa-arrow-right ms-3"></i
           ></a>
         </div>
         </nav>
+        {{-- Jika gambar header ini lokal, gunakan asset() juga. Contoh: style="background-image: url({{ asset('assets/img/header-bg.jpg') }})" --}}
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
                 <h1 class="display-2 text-white animated slideInDown mb-4">Teachers</h1>
@@ -102,9 +106,11 @@
                         eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
                 <div class="row g-4">
+                    {{-- Looping data guru dari controller akan lebih baik di sini --}}
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-1.jpg') }}" alt="">
+                             {{-- Menggunakan path yang benar: public/assets/img/... --}}
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-1.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -119,7 +125,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-2.jpg') }}" alt="">
+                             {{-- Menggunakan path yang benar: public/assets/img/... --}}
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-2.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -133,7 +140,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-3.jpg') }}" alt="">
+                             {{-- Menggunakan path yang benar: public/assets/img/... --}}
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-3.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -145,10 +153,10 @@
                             </div>
                         </div>
                     </div>
-                     {{-- Contoh duplikat untuk ilustrasi, hapus jika tidak perlu --}}
+                    {{-- Jika data guru dinamis, bagian duplikat ini tidak diperlukan --}}
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-1.jpg') }}" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-1.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -162,7 +170,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-2.jpg') }}" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-2.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -176,7 +184,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="{{ asset('img/team-3.jpg') }}" alt="">
+                            <img class="img-fluid rounded-circle w-75" src="{{ asset('assets/img/team-3.jpg') }}" alt="">
                             <div class="team-text">
                                 <h3>Full Name</h3>
                                 <p>Designation</p>
@@ -238,64 +246,65 @@
             <div class="col-lg-3 col-md-6">
               <h3 class="text-white mb-4">Photo Gallery</h3>
               <div class="row g-2 pt-2">
+                 {{-- Looping data galeri dari controller akan lebih baik di sini --}}
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/kelas_kosong_1.jpg') }}"
+                     {{-- Menggunakan path yang benar: public/assets/img/... --}}
+                    src="{{ asset('assets/img/kelas_kosong_1.jpg') }}"
                     alt=""
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/kelas_kosong_2.jpg') }}"
+                    src="{{ asset('assets/img/Kelas_kosong_2.jpg') }}"
                     alt=""
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/suasana_kelas_1.jpg') }}"
+                    src="{{ asset('assets/img/Suasana_kelas_1.jpg') }}"
                     alt=""
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/tentang.jpg') }}"
+                    src="{{ asset('assets/img/tentang.jpg') }}"
                     alt=""
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/tentang-2.jpg') }}"
+                    src="{{ asset('assets/img/tentang-2.jpg') }}"
                     alt=""
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('img/Poto_kelas_belajar_mengajar.jpg') }}"
+                    src="{{ asset('assets/img/Poto_kelas_belajar_mengajar.jpg') }}"
                     alt=""
                   />
                 </div>
               </div>
             </div>
-             {{-- Kolom Newsletter dihapus karena tidak ada dalam kode asli Anda --}}
           </div>
         </div>
         <div class="container">
           <div class="copyright">
             <div class="row">
               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                 {{-- CATATAN: Ganti href="#" dengan link yang sesuai --}}
+                 {{-- CATATAN: Ganti href="#" dengan link yang sesuai menggunakan route() atau url() --}}
                 &copy; <a class="border-bottom" href="#">SDN1TEGALURUNG</a>, All
                 Right Reserved.
 
                 Designed By
                 <a class="border-bottom" href="https://htmlcodex.com"
-                  >Hasan Maulana Ainulyaqin</a {{-- Nama Anda? Jika iya, biarkan saja --}}
+                  >Hasan Maulana Ainulyaqin</a
                 >
               </div>
               <div class="col-md-6 text-center text-md-end">
@@ -311,20 +320,21 @@
           </div>
         </div>
         </div>
-        {{-- CATATAN: Ganti href="#" jika perlu --}}
+        {{-- CATATAN: Ganti href="#" jika perlu, atau gunakan JS untuk smooth scroll --}}
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     {{-- CDN Scripts tidak perlu asset() --}}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    {{-- Local Scripts menggunakan asset() --}}
-    <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    {{-- Local Scripts menggunakan asset() dengan path yang benar --}}
+    <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-    <script src="{{ asset('js/main.js') }}"></script>
+    {{-- Menggunakan path yang benar: public/assets/js/... --}}
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 
 </html>
