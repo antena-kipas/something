@@ -51,8 +51,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
              {{-- CATATAN: Ganti href dengan route() atau url() --}}
-            <a href="index.html" class="nav-item nav-link ">Beranda</a>
-            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+            <a href="/" class="nav-item nav-link ">Beranda</a>
+            <a href="/about" class="nav-item nav-link">Tentang Kami</a>
             <div class="nav-item dropdown">
               {{-- CATATAN: href="#" OK untuk dropdown --}}
               <a
@@ -65,16 +65,16 @@
                 class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
               >
                  {{-- CATATAN: Ganti href dengan route() atau url() --}}
-                <a href="facility.html" class="dropdown-item"
+                <a href="/fasilitas" class="dropdown-item"
                   >Fasilitas Sekolah</a
                 >
-                <a href="team.html" class="dropdown-item">Guru</a>
+                <a href="/guru" class="dropdown-item">Guru</a>
                 {{-- CATATAN: Link ke 404 di sini mungkin tidak diperlukan, tapi jika ada, gunakan route() atau url() --}}
-                <a href="404.html" class="dropdown-item active">404 Error</a> {{-- 'active' karena ini halaman 404 --}}
+                <a href="" class="dropdown-item active">404 Error</a> {{-- 'active' karena ini halaman 404 --}}
               </div>
             </div>
             {{-- CATATAN: Ganti href dengan route() atau url() --}}
-            <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
+            <a href="/kontak" class="nav-item nav-link">Hubungi Kami</a>
           </div>
           {{-- CATATAN: Ganti href="" dengan route() atau url() ke halaman portal --}}
           <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
@@ -147,9 +147,9 @@
             <div class="col-lg-3 col-md-6">
               <h3 class="text-white mb-4">Tautan Cepat</h3> {{-- Judul disamakan --}}
               {{-- CATATAN: Ganti href="" dengan route() atau url() --}}
-              <a class="btn btn-link text-white-50" href="">Tentang Kami</a>
-              <a class="btn btn-link text-white-50" href="">Kontak kami</a>
-              <a class="btn btn-link text-white-50" href="">Fasilitas</a> {{-- Sesuaikan --}}
+              <a class="btn btn-link text-white-50" href="/about">Tentang Kami</a>
+              <a class="btn btn-link text-white-50" href="/kontak">Kontak kami</a>
+              <a class="btn btn-link text-white-50" href="/fasilitas">Fasilitas</a> {{-- Sesuaikan --}}
               <a class="btn btn-link text-white-50" href="">Kebijakan Privasi</a> {{-- Sesuaikan --}}
               <a class="btn btn-link text-white-50" href=""
                 >Syarat & Ketentuan</a {{-- Sesuaikan --}}
@@ -215,7 +215,7 @@
 
                 Designed By
                 <a class="border-bottom" href="https://htmlcodex.com"
-                  >Hasan Maulana Ainulyaqin</a
+                  >Proyek-2</a
                 >
               </div>
               <div class="col-md-6 text-center text-md-end">

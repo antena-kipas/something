@@ -60,7 +60,7 @@
       <nav
         class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
       >
-        <a href="index.html" class="navbar-brand">
+        <a href="/about" class="navbar-brand">
           <h1 class="m-0 text-primary">
             <i class="fa fa-school me-3"></i>SDN 1 TEGALURUNG
           </h1>
@@ -75,8 +75,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
-            <a href="index.html" class="nav-item nav-link active">Beranda</a>
-            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+            <a href="" class="nav-item nav-link active">Beranda</a>
+            <a href="/about" class="nav-item nav-link">Tentang Kami</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -87,15 +87,15 @@
               <div
                 class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
               >
-                <a href="facility.html" class="dropdown-item"
+                <a href="/fasilitas" class="dropdown-item"
                   >Fasilitas Sekolah</a
                 >
-                <a href="team.html" class="dropdown-item">Guru</a>
+                <a href="/guru" class="dropdown-item">Guru</a>
                 
-                <a href="404.html" class="dropdown-item">404 Error</a>
+                <a href="/404" class="dropdown-item">404 Error</a>
               </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
+            <a href="/kontak" class="nav-item nav-link">Hubungi Kami</a>
           </div>
           <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
             >PORTAL<i class="fa fa-arrow-right ms-3"></i
@@ -896,8 +896,8 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <h3 class="text-white mb-4">Quick Links</h3>
-              <a class="btn btn-link text-white-50" href="">Tentang Kami</a>
-              <a class="btn btn-link text-white-50" href="">Kontak kami</a>
+              <a class="btn btn-link text-white-50" href="/about">Tentang Kami</a>
+              <a class="btn btn-link text-white-50" href="/kontak">Kontak kami</a>
               <a class="btn btn-link text-white-50" href="">Our Services</a>
               <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
               <a class="btn btn-link text-white-50" href=""

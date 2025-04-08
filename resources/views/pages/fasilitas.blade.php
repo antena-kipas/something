@@ -40,7 +40,7 @@
         class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
       >
         {{-- CATATAN: Ganti href dengan route('nama.route.index') atau url('/') --}}
-        <a href="index.html" class="navbar-brand">
+        <a href="/" class="navbar-brand">
           <h1 class="m-0 text-primary">
             <i class="fa fa-school me-3"></i>SDN 1 TEGALURUNG
           </h1>
@@ -56,8 +56,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
             {{-- CATATAN: Ganti href dengan route() atau url() --}}
-            <a href="index.html" class="nav-item nav-link ">Beranda</a>
-            <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+            <a href="/" class="nav-item nav-link ">Beranda</a>
+            <a href="/about" class="nav-item nav-link">Tentang Kami</a>
             <div class="nav-item dropdown">
               {{-- CATATAN: href="#" biasanya OK untuk dropdown toggle --}}
               <a
@@ -70,18 +70,18 @@
                 class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
               >
                 {{-- CATATAN: Ganti href dengan route('nama.route.fasilitas') atau url('/fasilitas') --}}
-                <a href="facility.html" class="dropdown-item active" {{-- Aktif karena ini halaman fasilitas --}}
+                <a href="" class="dropdown-item active" {{-- Aktif karena ini halaman fasilitas --}}
                   >Fasilitas Sekolah</a
                 >
                  {{-- CATATAN: Ganti href dengan route('nama.route.guru') atau url('/guru') --}}
-                <a href="team.html" class="dropdown-item">Guru</a>
+                <a href="/guru" class="dropdown-item">Guru</a>
 
                  {{-- CATATAN: Ganti href dengan route('nama.route.404') atau url('/404') (jika ada) --}}
-                <a href="404.html" class="dropdown-item">404 Error</a>
+                <a href="/404" class="dropdown-item">404 Error</a>
               </div>
             </div>
              {{-- CATATAN: Ganti href dengan route('nama.route.kontak') atau url('/hubungi-kami') --}}
-            <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
+            <a href="/kontak" class="nav-item nav-link">Hubungi Kami</a>
           </div>
            {{-- CATATAN: Ganti href="" dengan route() atau url() ke halaman portal --}}
           <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
@@ -201,8 +201,8 @@
             <div class="col-lg-3 col-md-6">
               <h3 class="text-white mb-4">Tautan Cepat</h3> {{-- Judul disamakan --}}
               {{-- CATATAN: Ganti href="" dengan route() atau url() --}}
-              <a class="btn btn-link text-white-50" href="">Tentang Kami</a>
-              <a class="btn btn-link text-white-50" href="">Kontak kami</a>
+              <a class="btn btn-link text-white-50" href="/about">Tentang Kami</a>
+              <a class="btn btn-link text-white-50" href="/kontak">Kontak kami</a>
               <a class="btn btn-link text-white-50" href="">Fasilitas</a> {{-- Sesuaikan --}}
               <a class="btn btn-link text-white-50" href="">Kebijakan Privasi</a> {{-- Sesuaikan --}}
               <a class="btn btn-link text-white-50" href=""
@@ -224,14 +224,14 @@
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('assets/img/kelas_kosong_2.jpg') }}"
+                    src="{{ asset('assets/img/Kelas_kosong_2.jpg') }}"
                     alt="Ruang Kelas Kosong Lain"
                   />
                 </div>
                 <div class="col-4">
                   <img
                     class="img-fluid rounded bg-light p-1"
-                    src="{{ asset('assets/img/suasana_kelas_1.jpg') }}"
+                    src="{{ asset('assets/img/Suasana_kelas_1.jpg') }}"
                     alt="Suasana Belajar di Kelas"
                   />
                 </div>
@@ -269,14 +269,14 @@
                 Right Reserved.
 
                 Designed By
-                <a class="border-bottom" href="https://htmlcodex.com"
-                  >Hasan Maulana Ainulyaqin</a
+                <a class="border-bottom" href=""
+                  >Proyek-2</a
                 >
               </div>
               <div class="col-md-6 text-center text-md-end">
                 <div class="footer-menu">
                    {{-- CATATAN: Ganti href="" dengan route() atau url() --}}
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                   <a href="">Cookies</a> {{-- Sesuaikan --}}
                   <a href="">Help</a> {{-- Sesuaikan --}}
                   <a href="">FQAs</a> {{-- Sesuaikan --}}
